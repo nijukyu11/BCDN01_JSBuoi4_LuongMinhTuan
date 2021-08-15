@@ -1,0 +1,20 @@
+h1{
+    font-size: 60px;
+}
+
+/* tag name 1 điểm ưu tiên */
+h2{
+    background-color: palegreen ;
+}
+/* class name 10 điểm ưu tiên */
+.heading2{
+    color: red;
+}
+/* id 100 điểm ưu tiên */
+#head2{
+    font-size: 60px;
+}
+/* Cách đè code
+C1: bộ selector bằng điểm và thứ tự code nằm dưới
+C2: điểm ưu tiên cao hơn */
+#head2.heading2{background-color: sandybrown;}

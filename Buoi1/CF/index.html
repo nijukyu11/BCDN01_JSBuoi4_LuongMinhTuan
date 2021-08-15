@@ -1,0 +1,109 @@
+<!-- khai bao phien ban (5) -->
+<!DOCTYPE html>
+<!-- thẻ cha -->
+<html>
+    <!-- thẻ con trực tiếp, cấp 1 -->
+    <head>
+        <!-- Khai báo thông tin thêm cho website -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+                <meta name="description" content="cafe"><!-- SEO -->
+                <title>CyberCafe</title><!-- Tên trang hiển thị trên tab trình duyệt -->
+        </head>
+    <body style="background-color: #3A4A59;">
+        <h1 style="text-align: center;color: antiquewhite;">CyberCafe</h1>
+        <!-- div gom nhóm các thẻ, phần menu -->
+        <div style="text-align: center;">
+            <!-- thẻ liên kết -->
+            <!-- "#" liên kết nội -->
+            <a href="#" style="color: cornsilk;">Home</a>
+            <a href="#menu" style="color: cornsilk;">Menu</a>
+            <!-- liên kết ngoại, các liên kết bên ngoài trang web -->
+            <a href="https://www.now.vn" target="_blank" style="color: cornsilk;">Order</a>
+        </div>
+        <!-- div gom nhóm phần banner -->
+        <div style="text-align: center;">       
+            <img style="width: 75%;" src="./img/chilling-cafe-01.jpg" alt="cafe">
+            <!-- ./ hiện vị trí các file cùng cấp với file hiện tại -->
+            <!-- ../ nhảy 1 cấp folder cha -->
+            <!-- width: đơn vị tuyệt đối (px), đơn vị tương đối (%) lấy tỉ lệ theo kích thước của thẻ cha trực tiếp gần nhất  -->
+            <hr style="height: 5px; width: 75%;" noshade="">
+            <!-- noshade, thuộc tính đặc biệt chỉ thẻ hr mới có -->
+        </div>
+        <h2 style="text-align: center;">About</h2>     
+        <p style="text-align: right;"> <!-- lorem -->
+           <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>  Possimus perferendis accusamus esse quis perspiciatis soluta sed numquam, officiis amet maiores iure quibusdam tempora facilis eos est! Saepe ex assumenda tempore dolorem sequi exercitationem dolor labore! Rerum fuga quasi nihil eos laboriosam, sed alias at. Dolores perferendis quaerat est et.
+           <br> Officiis, reiciendis doloremque. <i>Fugit sequi totam deleniti aspernatur corporis consectetur minus</i>  nihil cupiditate delectus voluptatum libero, reprehenderit voluptatem molestias a? Dolorum eum atque amet, eos cum alias illum vel ratione! <b><i> In, nulla illo iste velit beatae perspiciatis reiciendis autem vero eveniet possimus enim eum libero nemo recusandae sapiente rerum similique excepturi at quo ipsum explicabo voluptas quibusdam suscipit.</i></b>
+        </p>
+        <h2>Special Items</h2>
+        <!-- danh sách không có thứ tự -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <!-- danh sách có thứ tự -->
+        <ol type="I">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <h2 id="menu">Menu</h2>
+        <!-- tr: hàng
+        th: thẻ cột tiêu đề
+        td: thẻ tạo cột thường -->
+        <table border="5px" style="width: 500px; height: 300px;" align="center">
+            <!-- hàng 1 -->
+            <tr>
+                <th colspan="2" style="background-color: brown;">Name</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+            <!-- hàng 2 -->
+            <tr>
+                <!-- emmet: cú pháp tạo nhanh thẻ html,ex: td*n -->
+                <td rowspan="4" style="background-image: url(./img/chilling-cafe-11.jpg);">Traditional</td>
+                <td rowspan="2">Vietnamese</td>
+                <td>Hot</td>
+                <td>60,000</td>
+            </tr>
+            <!-- hàng 3 -->
+            <tr>
+                <td>Cold</td>
+                <td>28,000</td>
+            </tr>
+            <!-- hàng 4 -->
+            <tr>
+                <td rowspan="2">Milk Coffe</td>
+                <td>Hot</td>
+                <td>38,000</td>
+            </tr>
+            <!-- hàng 5 -->
+            <tr>
+                <td>Cold</td>
+                <td>54,000</td>
+            </tr>
+            <!-- hàng 6 -->
+            <tr>
+                <td rowspan="3">Expresso</td>
+                <td>American Coffee</td>
+                <td rowspan="3">Hot</td>
+                <td>110,000</td>
+            </tr>
+            <!-- hàng 7 -->
+            <tr>
+                <td>Machiato</td>
+                <td rowspan="2">40,000</td>
+            </tr>
+            <!-- hàng 8 -->
+            <tr>
+                <td>Cappuchino</td>
+            </tr>
+        </table>
+        <a href="mailto: abc@gmail.com">abc@gmail.com</a>
+        <a href="tel: 0123456789">0123456789</a>
+        <!-- Nếu href ko điền tên id thì mặc định sẽ trở về đầu trang -->
+        <div style="text-align: center;">
+            <a href="#">Trờ lại đầu trang</a>
+        </div> 
+    </body>
+</html>
